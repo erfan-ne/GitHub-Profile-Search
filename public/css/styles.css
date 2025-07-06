@@ -878,6 +878,9 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-duration: 150ms;
 }
+.user-card__default{
+  text-align: center;
+}
 
 #user-card:hover {
   --tw-scale-x: 1.01;

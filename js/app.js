@@ -30,8 +30,7 @@ const searchUser = () => {
             </p>
             <p
               id="username"
-              class="font-[Poppins] text-zinc-500 font-medium mt-1 text-sm"
-            >
+              class="font-[Poppins] text-zinc-500 font-medium mt-1 text-sm">
             @${gitHubUser.login}
             </p>
           </div>
@@ -55,7 +54,7 @@ const searchUser = () => {
               <i class="fas fa-link"></i>
             </span>
             <span id="link">
-              <a id="website link" href="https://github.com/${gitHubUser.login}?tab=repositories" class="github-url" target="_blank">User Repositories</a>
+              <a href="https://github.com/${gitHubUser.login}?tab=repositories" target="_blank">User Repositories</a>
             </span>
           </div>
         </div>

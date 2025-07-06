@@ -7,9 +7,15 @@ const userCard = document.querySelector("#user-card")
 
 const searchUser = () => {
   fetch(`https://api.github.com/users/${searchInput.value}`)
-    .then(response => response.json())
+    .then(response => {
+      if(!response.ok){
+        throw new Error("!کاربر مورد نظر یافت نشد");        
+      } else {
+        return response.json()
+      }
+    })
     .then(gitHubUser =>{
-
+      
       userCard.innerHTML = `
       <div class="card-header flex items-center gap-3">
           <img
@@ -93,7 +99,15 @@ const searchUser = () => {
         </div>
       `
     })
+    .catch(error => {
+      userCard.innerHTML = `
+        <h6 class="user-card__default">
+          ${error.message}
+        </h6>
+      `;
+    });
   
 }
 
 searchBtn.addEventListener("click", searchUser)
+window.addEventListener("keyup" , (event)=> event.key === "Enter" ? searchUser() : null)

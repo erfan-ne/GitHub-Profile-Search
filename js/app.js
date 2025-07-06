@@ -42,15 +42,15 @@ const searchUser = () => {
             <span class="text-xl text-zinc-400">
               <i class="fas fa-location-dot"></i>
             </span>
-            <span id="#location"> ${gitHubUser.location} </span>
+            <span id="#location" class="font-Sans-DemiBold"> ${gitHubUser.location ? gitHubUser.location : "!یافت نشد"} </span>
           </div>
           <div>
             <span class="text-xl text-zinc-400">
               <i class="fas fa-link"></i>
             </span>
             <span id="link">
-              <a id="website link" href="#" class="github-url" target="_blank"
-                >User Repositor</a
+              <a id="website link" href="https://github.com/${gitHubUser.login}?tab=repositories" class="github-url" target="_blank"
+                >User Repositories</a
               >
             </span>
           </div>

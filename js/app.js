@@ -49,15 +49,11 @@ const searchUser = () => {
               <i class="fas fa-link"></i>
             </span>
             <span id="link">
-              <a id="website link" href="https://github.com/${gitHubUser.login}?tab=repositories" class="github-url" target="_blank"
-                >User Repositories</a
-              >
+              <a id="website link" href="https://github.com/${gitHubUser.login}?tab=repositories" class="github-url" target="_blank">User Repositories</a>
             </span>
           </div>
         </div>
-        <div
-          class="my-4 w-full rounded-md bg-zinc-100 h-20 grid grid-cols-3 child:w-full child:flex child:flex-col child:gap-1 child:items-center child:justify-center"
-        >
+        <div class="my-4 w-full rounded-md bg-zinc-100 h-20 grid grid-cols-3 child:w-full child:flex child:flex-col child:gap-1 child:items-center child:justify-center">
           <article>
             <p id="repositories" class="font-[Poppins] text-2xl font-extrabold">
             ${gitHubUser.public_repos}

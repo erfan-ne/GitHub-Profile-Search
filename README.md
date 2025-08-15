@@ -55,7 +55,7 @@ git clone https://github.com/your-username/github-profile-search.git
 cd github-profile-search
 ```
 
-2. Open `index.html` in your browser.
+2. Open `index.html` in your browser
 
 3. Type a GitHub username and press **Enter** or click the search button.
 

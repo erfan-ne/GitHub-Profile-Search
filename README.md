@@ -81,7 +81,7 @@ Shows a custom error message if the user is not found.
 
 | Default State | Profile Found | User Not Found |
 |--------------|--------------|----------------|
-| ![](./screenshots/default.png) | ![](./screenshots/profile.png) | ![](./screenshots/error.png) |
+| ![](https://github.com/erfan-ne/GitHub-Profile-Search/blob/master/public/Screenshot%201.png) | ![](https://github.com/erfan-ne/GitHub-Profile-Search/blob/master/public/Screenshot%202.png) | ![](https://github.com/erfan-ne/GitHub-Profile-Search/blob/master/public/Screenshot%203.png) |
 
 ## 👨‍💻 Author
 
